@@ -14,6 +14,8 @@
 		85E253FD1DC14A8A000F81D6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 85E253FC1DC14A8A000F81D6 /* Assets.xcassets */; };
 		85E254001DC14A8A000F81D6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 85E253FE1DC14A8A000F81D6 /* LaunchScreen.storyboard */; };
 		85E2540B1DC14A8A000F81D6 /* ChatClientTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85E2540A1DC14A8A000F81D6 /* ChatClientTests.swift */; };
+		B820896E1DC19C1000DC31BB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B820896D1DC19C1000DC31BB /* ChatViewController.swift */; };
+		B8AB71DA1DC1A58D008F76E3 /* ChatViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AB71D91DC1A58D008F76E3 /* ChatViewCell.swift */; };
 		D42E74682317279F0C6F898E /* Pods_ChatClient.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7F19EF6AFE778563DA8132AA /* Pods_ChatClient.framework */; };
 /* End PBXBuildFile section */
 
@@ -42,6 +44,8 @@
 		85E254061DC14A8A000F81D6 /* ChatClientTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChatClientTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		85E2540A1DC14A8A000F81D6 /* ChatClientTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatClientTests.swift; sourceTree = "<group>"; };
 		85E2540C1DC14A8A000F81D6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B820896D1DC19C1000DC31BB /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		B8AB71D91DC1A58D008F76E3 /* ChatViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewCell.swift; sourceTree = "<group>"; };
 		DA4E50C235A67381AACC64F1 /* Pods-ChatClient.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatClient.release.xcconfig"; path = "Pods/Target Support Files/Pods-ChatClient/Pods-ChatClient.release.xcconfig"; sourceTree = "<group>"; };
 		EDD1F32D9D66CDFD30D2BC60 /* Pods-ChatClientTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ChatClientTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ChatClientTests/Pods-ChatClientTests.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -91,6 +95,8 @@
 			children = (
 				85E253F51DC14A8A000F81D6 /* AppDelegate.swift */,
 				85E253F71DC14A8A000F81D6 /* ViewController.swift */,
+				B820896D1DC19C1000DC31BB /* ChatViewController.swift */,
+				B8AB71D91DC1A58D008F76E3 /* ChatViewCell.swift */,
 				85E253F91DC14A8A000F81D6 /* Main.storyboard */,
 				85E253FC1DC14A8A000F81D6 /* Assets.xcassets */,
 				85E253FE1DC14A8A000F81D6 /* LaunchScreen.storyboard */,
@@ -262,7 +268,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		80FFD98A4F52118E22C088AC /* [CP] Check Pods Manifest.lock */ = {
@@ -277,7 +283,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		BDB97CFD7BBB45FC83173F11 /* [CP] Embed Pods Frameworks */ = {
@@ -332,7 +338,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B8AB71DA1DC1A58D008F76E3 /* ChatViewCell.swift in Sources */,
 				85E253F81DC14A8A000F81D6 /* ViewController.swift in Sources */,
+				B820896E1DC19C1000DC31BB /* ChatViewController.swift in Sources */,
 				85E253F61DC14A8A000F81D6 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

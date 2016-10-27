@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "4F27B9A0F6F63BC9932C4C73FD8BEE37BDD60C12",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "97BDD0E36C73060D84D22BAFFBCED0314BDA14E4" : 9223372036854775807,
+    "4F27B9A0F6F63BC9932C4C73FD8BEE37BDD60C12" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "A08B44E9-6F87-4621-BCAD-88C2E13EA0AA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "97BDD0E36C73060D84D22BAFFBCED0314BDA14E4" : "",
+    "4F27B9A0F6F63BC9932C4C73FD8BEE37BDD60C12" : "iOS_ChatClient\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "ChatClient",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "ChatClient\/ChatClient.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/kaileding\/iOS_ChatClient.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "4F27B9A0F6F63BC9932C4C73FD8BEE37BDD60C12"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/hideki\/codepath-ios-lab.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "97BDD0E36C73060D84D22BAFFBCED0314BDA14E4"
+    }
+  ]
+}
